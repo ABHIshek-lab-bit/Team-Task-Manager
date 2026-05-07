@@ -1,0 +1,72 @@
+/* Page Headers - Universal styling for all pages */
+.page-header {
+    margin-bottom: 32px;
+    animation: fadeInDown 0.6s ease-out;
+}
+
+.page-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--color-textInverse);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.page-title-icon {
+    font-size: 36px;
+    color: var(--color-textInverse);
+    filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.3));
+}
+
+.page-subtitle {
+    color: var(--color-textInverse);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+    opacity: 0.95;
+}
+
+/* Dark theme specific */
+[data-theme="dark"] .page-title {
+    color: #f8fafc;
+    text-shadow: 0 2px 12px rgba(167, 139, 250, 0.5);
+}
+
+[data-theme="dark"] .page-title-icon {
+    color: #a78bfa;
+    filter: drop-shadow(0 4px 12px rgba(167, 139, 250, 0.6));
+}
+
+[data-theme="dark"] .page-subtitle {
+    color: #e2e8f0;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Status Badge - Clickable indicator */
+.status-badge-clickable {
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-badge-clickable:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+}
+
+.status-badge-clickable:active {
+    transform: scale(0.98) !important;
+}
