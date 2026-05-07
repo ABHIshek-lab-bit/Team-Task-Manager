@@ -52,7 +52,7 @@ team-task-manager/
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/ABHIshek-lab-bit/Team-Task-Manager
    cd team-task-manager
    ```
 
@@ -122,8 +122,8 @@ npm run frontend
 **Deployment Platform:** Railway
 
 ### Live Application
-- **Frontend**: [Add your deployed URL]
-- **Backend API**: [Add your API URL]
+- **Frontend**: https://determined-alignment-production.up.railway.app
+- **Backend API**: https://team-task-manager-production-ce14.up.railway.app/
 
 ### Deployment Notes
 - Environment variables are configured via Railway dashboard
