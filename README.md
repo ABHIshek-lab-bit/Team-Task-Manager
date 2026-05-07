@@ -38,6 +38,7 @@ team-task-manager/
 │       ├── services/
 │       └── App.js
 └── database/          # SQL schema
+    └── schema.sql
 ```
 
 ## 🚀 Quick Start
